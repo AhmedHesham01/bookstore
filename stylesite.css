@@ -343,6 +343,11 @@ h3.end{
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
 }
+.onee{
+    height: 75px;
+    width: 80px;
+    margin: -12px;
+}
 footer h3.follow{
     margin-top: 0;
 }
