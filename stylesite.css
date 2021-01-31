@@ -1,0 +1,353 @@
+@font-face{
+    font-family: ind-font;
+    src: url(ind-font.ttf);
+}
+@font-face{
+    font-family: font-a;
+    src: url(Lato-Light.ttf);
+}
+
+body{
+    perspective: 2000px;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    margin: 10px;
+    
+}
+header{
+    transform-style: preserve-3d;
+    background:linear-gradient(#0c5c75, #a7d0e0);
+    padding-bottom: 80px;
+    border: 0px solid white;
+    border-bottom: 1.5px solid #4d5f77;
+}
+h1{
+    font-family: ind-font;
+    font-size: 70px;
+    margin: 0;
+    padding-left: 20px;
+    word-spacing: -20px;
+    padding-top: 8px;
+}
+ul{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+
+}
+li{
+    display: inline;
+    margin: 10px;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+nav button:hover{
+    transform: scale(1.2 , 1.2);
+    -webkit-transform: scale(1.2 , 1.2);
+    -moz-transform: scale(1.2 , 1.2);
+    -ms-transform: scale(1.2 , 1.2);
+    -o-transform: scale(1.2 , 1.2);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+nav button:active{
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+nav button{
+    background-color:#1e6a82;
+    border: white 1px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    /*box-shadow:4px 5px 15px #6c8f9cd6;
+    */padding: 9px;
+}
+h3{
+    font-family: font-a;
+    text-align: center;
+    color: #004e67;
+    letter-spacing: 5px;
+    font-size: 37px;
+
+}
+img{
+    transition: all 1.25s ease-in-out;
+    -webkit-transition: all 1.25s ease-in-out;
+    -moz-transition: all 1.25s ease-in-out;
+    -ms-transition: all 1.25s ease-in-out;
+    -o-transition: all 1.25s ease-in-out;
+}
+img.book1{
+    width: 400px;
+    margin-bottom: 20px;
+}
+img.book2{
+    position: absolute;
+    margin-bottom: 20px;
+    TOP: 10%;
+    right: 30%;
+    WIDTH: 300px;
+    transform: rotate(-8deg);
+}
+img.book3{
+    position: absolute;
+    margin-bottom: 20px;
+    TOP: 10px;
+    RIGHT: 0;
+    WIDTH: 300px;
+    transform: rotate(0deg);
+}
+img:hover{
+    transform: rotateZ(370deg);
+    -webkit-transform: rotateZ(370deg);
+    -moz-transform: rotateZ(370deg);
+    -ms-transform: rotateZ(370deg);
+    -o-transform: rotateZ(370deg);
+}
+h3:nth-child(2){
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -26px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+button.shop{
+    margin: 0 auto;
+    display: block;
+    background-color: #72a8bb;
+    border-radius: 5px;
+    padding: 25px 50px;
+    margin-top: 22px;
+    border: 1px solid white;
+    transform-style: preserve-3d;
+    transform-origin: left top;
+    transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+}
+button.shop:hover{
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+}
+summary{
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas: 
+    "section section section aside "
+    "section section section aside ";
+    margin-top: 2px;
+}
+figcaption{
+    display: inline-block;
+    max-inline-size: fit-content;
+    padding-left: 10px;
+    color: #004e67;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: font-a;
+    letter-spacing: 1px;
+}
+figcaption.title2{
+    color: #f8f5e3;
+    display: inline-block;
+    max-inline-size: fit-content;
+    padding-left: 10px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: font-a;
+    letter-spacing: 1px;
+}
+p{
+    margin: 0 auto;
+    text-align: center;
+    width: 120px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-family: font-a;
+}
+
+figure{
+    border: 2px dotted white;
+    border-radius: 10px;
+    position: relative;
+}
+section h3{
+    text-align: left;
+    padding-left: 40px;
+}
+section{
+    grid-area: section;
+    background: linear-gradient( #a7d0e0,#0c5c75);
+}
+aside{
+    grid-area: aside;
+    background: linear-gradient( #a7d0e0,#0c5c75);
+    margin-left: 6px;
+    position: relative;
+    width: 280px;
+    height: 146.5%;
+}
+div.contanier{
+    width: 81%;
+    position: relative;
+    display: inline-block;
+    border: 2px dashed #2e758c;
+    padding-bottom: 15px;
+    padding-right: 68px;
+    margin-top: 5px;
+}
+div.card{
+    display: inline-block;
+}
+div.three{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin-right: 10px;
+}
+div.two{
+    position: absolute;
+    right: 0;
+    left: 10px;
+    top: 0;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 1px auto;
+    padding: 10px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    text-align: center;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.card > div{
+    background: linear-gradient(#0c5c75, #a7d0e0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.card .front{
+    z-index: 2;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card .back{
+    z-index: 1;
+    color: aqua;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+footer{
+    background: linear-gradient(#0c5c75, #a7d0e0);
+    margin-top: 3px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+h3.end{
+    margin: 0px;
+    padding-top: 10px;
+    color: #ffffff;
+}
+.front h3{
+    color: #a3cddd;;
+}
+.back h3{
+    color: #a3cddd;;
+}
+.fbicon{
+    width: 50px;
+    height: 50px;
+    border: radius 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.fbicon:hover{
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+}
+.fbicon:active{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+.onee{
+    height: 75px;
+    width: 80px;
+    margin: -12px;
+}
+footer h3.follow{
+    margin-top: 0;
+}
